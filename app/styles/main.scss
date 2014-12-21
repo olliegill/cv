@@ -1,0 +1,100 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+
+$text-color: #fff;
+$header-font: 'Lobster', cursive;
+$secondary-font: 'Roboto Condensed', sans-serif;
+
+
+a {
+  color: #999994;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bdbdbd;
+}
+
+body {
+  background: url('../images/footer_lodyas.png');
+  @include outer-container;
+  color: $text-color;
+}
+
+h1 {
+  font-family: $header-font;
+}
+
+p {
+  letter-spacing: .8px;
+}
+
+header h1 {
+  font-size: 4.5em;
+  margin: 1em 0 0;
+
+}
+
+header h2 {
+  font-family: $secondary-font;
+  font-size: 2em;
+  margin: 0;
+}
+
+.personal {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  @include span-columns(12);
+}
+
+.personal h1{
+  font-size: 2.5em;
+  padding: 0 0 .5em;
+  border-bottom: solid $text-color 1px;
+}
+
+.personal p {
+  @include span-columns(11);
+  @include shift(.5);
+  font-size: 1.2em;
+}
+
+.summary h1 {
+  font-size: 2.5em;
+  padding: 0 0 .5em;
+  border-bottom: solid $text-color 1px;
+}
+
+.summary ul {
+  @include span-columns(12);
+}
+
+.summary li {
+  //outline: solid red 1px;
+  display: inline-block;
+  @include span-columns(4);
+  @include shift(1.5);
+  font-size: 1.3em;
+  margin-bottom: .6em;
+}
+
+
+.education h1 {
+  font-size: 2.5em;
+  padding: 0 0 .5em;
+  border-bottom: solid $text-color 1px;
+  margin-top: 1em;
+
+  h2 {
+    margin-top: 2em;
+  }
+}
+
+
+.education p {
+  @include span-columns(11);
+  @include shift(.5);
+  font-size: 1.1em;
+}
