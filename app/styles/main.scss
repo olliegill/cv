@@ -8,6 +8,11 @@ $header-font: 'Lobster', cursive;
 $secondary-font: 'Roboto Condensed', sans-serif;
 
 
+p {
+  @include span-columns(11);
+  @include shift(.5);
+}
+
 a {
   color: #999994;
   text-decoration: none;
@@ -97,4 +102,18 @@ header h2 {
   @include span-columns(11);
   @include shift(.5);
   font-size: 1.1em;
+}
+
+.work h1 {
+  font-size: 2.5em;
+  padding: 0 0 .5em;
+  border-bottom: solid $text-color 1px;
+  margin-top: 1em;
+}
+
+.about h1 {
+  font-size: 2.5em;
+  padding: 0 0 .5em;
+  border-bottom: solid $text-color 1px;
+  margin-top: 1em;
 }
