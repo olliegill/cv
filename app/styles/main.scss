@@ -11,6 +11,7 @@ $secondary-font: 'Roboto Condensed', sans-serif;
 p {
   @include span-columns(11);
   @include shift(.5);
+  letter-spacing: .8px;
 }
 
 a {
@@ -32,9 +33,6 @@ h1 {
   font-family: $header-font;
 }
 
-p {
-  letter-spacing: .8px;
-}
 
 header h1 {
   font-size: 4.5em;
