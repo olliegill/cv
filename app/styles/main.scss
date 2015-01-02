@@ -3,10 +3,18 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 
+$mobile: new-breakpoint(max-width 600px);
+$tablet: new-breakpoint(max-width 870px);
 $text-color: #fff;
 $header-font: 'Lobster', cursive;
 $secondary-font: 'Roboto Condensed', sans-serif;
 
+div {
+  @include media($mobile) {
+    @include span-columns(10);
+    @include shift(.5);
+  }
+}
 
 p {
   @include span-columns(11);
@@ -29,6 +37,7 @@ body {
   color: $text-color;
 }
 
+
 h1 {
   font-family: $header-font;
 }
@@ -38,12 +47,20 @@ header h1 {
   font-size: 4.5em;
   margin: 1em 0 0;
 
+  @include media($mobile) {
+    margin-left: .3em;
+  }
+
 }
 
 header h2 {
   font-family: $secondary-font;
   font-size: 2em;
   margin: 0;
+
+  @include media($mobile) {
+    margin-left: 1em;
+  }
 }
 
 .personal {
